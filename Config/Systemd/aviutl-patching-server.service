@@ -1,0 +1,12 @@
+[Unit]
+Description=AviUtl Patching Server
+After=network.target
+
+[Service]
+Restart=on-failure
+RestartSec=5s
+WorkingDirectory=/usr/local/aviutl-patching-server
+ExecStart=/usr/bin/dotnet /usr/local/aviutl-patching-server/PatchingServer.dll -c /usr/local/aviutl-patching-server/config.json -p 17000 -l /var/log/aviutl-patching/aviutl-patching-server.log
+
+[Install]
+WantedBy=multi-user.target

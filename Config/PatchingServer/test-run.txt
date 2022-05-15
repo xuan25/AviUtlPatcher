@@ -1,0 +1,1 @@
+dotnet PatchingServer.dll -c config.json -p 17000 -l log.txt
