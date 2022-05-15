@@ -1,0 +1,10 @@
+{
+  "patcher_url": "https://xuan25.com/aviutl/LaunchAviUtl.exe",
+  "patcher_path": "/usr/local/xuan25.com/aviutl/LaunchAviUtl.exe",
+  "content_endpoint": "https://xuan25.com/aviutl/content",
+  "content_path": "/usr/local/xuan25.com/aviutl/content",
+  "verify_exclusion": [
+    ".+\\.ini$"
+  ],
+  "executable": "AviUtl/AviUtl中文版.exe"
+}

@@ -1,0 +1,14 @@
+xuan25.com {
+    root * /usr/local/xuan25.com
+    file_server /aviutl/* {
+        browse "/usr/local/xuan25.com/browse.html"
+    }
+}
+
+api.xuan25.com {
+    handle_path /aviutl/index {
+        reverse_proxy * http://localhost:17000 {
+            header_down Access-Control-Allow-Origin *
+        }
+    }
+}
